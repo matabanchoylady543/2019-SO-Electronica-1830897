@@ -8,14 +8,14 @@
 
 volatile int counter = 0; 
 int loops;
-int puerta;
+puerta puertita14;
 
 void *worker(void *arg) {
     int i;
     for (i = 0; i < loops; i++) {
-    	cerrar_puerta();
+    	cerrar_puerta(puertita14);
 	counter++;
-	abrir_puerta();
+	abrir_puerta(puertita14);
     }
     return NULL;
 }
@@ -25,16 +25,16 @@ int main(int argc, char *argv[]) {
 	fprintf(stderr, "usage: threads <loops>\n"); 
 	exit(1); 
     } 
+    crear_puerta(puertita14);
     loops = atoi(argv[1]);
     pthread_t p1, p2;
-    crear_puerta(p1,p2);
     printf("Initial value : %d\n", counter);
     Pthread_create(&p1, NULL, worker, NULL); 
     Pthread_create(&p2, NULL, worker, NULL);
     Pthread_join(p1, NULL);
     Pthread_join(p2, NULL);
     printf("Final value   : %d\n", counter);
-    destruir_puerta();
+    destruir_puerta(puertita14);
     return 0;
 }
 
