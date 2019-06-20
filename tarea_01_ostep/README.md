@@ -39,5 +39,5 @@ guardará el numéro total de posiciones del fichero.
 por la función ftell() &gt;=0, la variable de control n decrementará su valor en 1 por cada repetición del bucle y
 se utilizará ese valor para posicionar el puntero e imprimir los carácteres, esto con el fin de mostrar el texto
 de manera inversa hasta llegar a la posición inicial del fichero.
--
-Si el valor de la posición actual es igual al número total de posiciones (cont) se finalizará el programa.
+
+-Si el valor de la posición actual es igual al número total de posiciones (cont) se finalizará el programa.
