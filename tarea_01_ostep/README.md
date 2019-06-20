@@ -1,4 +1,4 @@
-#Reporte acerca de lo realizado en cada item.
+# Reporte acerca de lo realizado en cada item.
 
 *[mem.c](mem.c):
 
