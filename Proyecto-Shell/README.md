@@ -2,7 +2,7 @@
 
 En su copilaciòn se siguio usando el comando gcc ya que este provee
 de todas las distribuciones, asi mismo nos genero un ejecutable 
-llamado a.out; en cierto caso y para corroborar que el shell era 
+llamado "a.out"; en cierto caso y para corroborar que el shell era 
 ejecutable se decidiò usar el comando -wall por si surgia algùn
 incoveniente, fuera mucho màs sencillo de buscarlo.
 
